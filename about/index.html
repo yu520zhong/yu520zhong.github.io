@@ -10,7 +10,7 @@
   
   <title>
     
-      Miuu
+      About | Miuu
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -111,53 +111,36 @@
   </div>
 </header>
 
-    <div id="article-banner">
-  <h2>Archives</h2>
-  <p class="post-date">文章归档</p>
-</div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2015
-  </h1>
-  <div class="section-list">
-    
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/React-Native的ES5-ES6写法对照表/" class="archive-title">React/React-Native的ES5-ES6写法对照表</a>
-        <p class="archive-date">12-03</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/React:React-Native的ES5-ES6写法对照表/" class="archive-title">React/React-Native的ES5-ES6写法对照表</a>
-        <p class="archive-date">12-03</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/简述如何将本地项目上传到git远程库/" class="archive-title">如何将本地项目上传到git远程库?</a>
-        <p class="archive-date">12-03</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/Navigator-is-deprecated-and-has-been-removed-from-this-package/" class="archive-title">react-native中Navigator-is-deprecated的报错处理</a>
-        <p class="archive-date">12-03</p>
-      </div>
-    
+    <div id="about-banner" style="background-image: url(http://file.muyutech.com/about.jpg)"></div>
+<div class="author">
+  <div class="head">
+    <img src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg" />
   </div>
-</section>
-  
-</main>
+  <h3>Miuu</h3>
+  <p class="discription">人若无梦，夜的眼睛就要瞎了。</p>
+  <section class="share-icons">
+    
+    
+    
+    
+    
+  </section>
+</div>
 
 <script>
   (function () {
-    var url = 'http://www.miuu.club/archives/2015/12/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
+    $('.header').removeClass('fixed-header')
+    var windowH = $(window).height();
+    var author = $('.author')
+    var bodyH = author.offset().top + author[0].offsetHeight + 71;
+    if (bodyH < windowH) {
+      author.css({
+        'margin-bottom': windowH - bodyH
+      })
+    }
   })();
 </script>
+
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>

@@ -10,7 +10,7 @@
   
   <title>
     
-      Miuu
+      Tags | Miuu
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -112,50 +112,42 @@
 </header>
 
     <div id="article-banner">
-  <h2>Archives</h2>
-  <p class="post-date">文章归档</p>
+  <h2>Tags</h2>
+  <p class="post-date">标签检索</p>
 </div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2015
-  </h1>
-  <div class="section-list">
+<main class="app-body">
+  <div id="tag-cloud">
     
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/React-Native的ES5-ES6写法对照表/" class="archive-title">React/React-Native的ES5-ES6写法对照表</a>
-        <p class="archive-date">12-03</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/React:React-Native的ES5-ES6写法对照表/" class="archive-title">React/React-Native的ES5-ES6写法对照表</a>
-        <p class="archive-date">12-03</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/简述如何将本地项目上传到git远程库/" class="archive-title">如何将本地项目上传到git远程库?</a>
-        <p class="archive-date">12-03</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2015/12/03/Navigator-is-deprecated-and-has-been-removed-from-this-package/" class="archive-title">react-native中Navigator-is-deprecated的报错处理</a>
-        <p class="archive-date">12-03</p>
-      </div>
+      <a class="tag1" data-name="tag-Git">Git</a>
     
   </div>
-</section>
   
+    <div class="tag-list">
+      <h3 class="tag-name" id="tag-Git">Git</h3>
+      
+        <ul class="tag-preview">
+          <li>
+            <a href="/2015/12/03/简述如何将本地项目上传到git远程库/">如何将本地项目上传到git远程库?</a>
+          </li>
+        </ul>
+        
+    </div>
+    
 </main>
 
 <script>
   (function () {
-    var url = 'http://www.miuu.club/archives/2015/12/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
+    var url = 'http://www.miuu.club/tags/index.html'
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+    var tag = location.hash.replace('#', '')
+    if (tag) {
+      var tagId = "#tag-" + tag;
+      $("html, body").animate({
+        scrollTop: $(tagId).offset().top 
+      }, 400)
+    }
   })();
 </script>
     <div class="scroll-top">
