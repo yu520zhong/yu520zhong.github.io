@@ -68,9 +68,8 @@
     
     <entry>
       <title><![CDATA[如何将本地项目上传到git远程库?]]></title>
-      <url>/2016/12/03/%E7%AE%80%E8%BF%B0%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0git%E8%BF%9C%E7%A8%8B%E5%BA%93/</url>
-      <content type="html"><![CDATA[<p><contents><br>假如我想将本地项目上传到自己的git远程库，并且让这两个仓库进行远程同步，该如何操作呢?<br><a id="more"></a></contents></p>
-<p><div class="tip"><br>    在ECMAScript 5的strict模式下，这种情况的<code>this</code>已经被规定不会指向全局对象了，而是<code>undefined</code><br></div></p>
+      <url>/2016/12/03/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0git%E8%BF%9C%E7%A8%8B%E5%BA%93/</url>
+      <content type="html"><![CDATA[<p>假如我想将本地项目上传到自己的git远程库，并且让这两个仓库进行远程同步，该如何操作呢?<br><a id="more"></a></p>
 <h2 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h2><p><strong> 1、使用cd命令进入项目文件夹,通过命令 git init 把这个目录变成git可以管理的仓库； </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure></p>
 <p><strong> 2、把文件添加到版本库中，使用命令 git add . 添加到暂存区里面去； </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
 <p><strong> 3、用命令 git commit告诉Git，把文件提交到仓库。引号内为提交说明； </strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m &apos;first commit&apos;</div></pre></td></tr></table></figure></p>
@@ -99,7 +98,8 @@
       <url>/2015/12/03/Navigator-is-deprecated-and-has-been-removed-from-this-package/</url>
       <content type="html"><![CDATA[<p>报错：’Navigator is deprecated and has been removed from this package. It can now be installed ‘<br><a id="more"></a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ExceptionsManager.js:65 Navigator is deprecated and has been removed from this </div><div class="line">package. It can now be installed and imported from </div><div class="line">`react-native-deprecated-custom-components` instead of `react-native`. </div><div class="line">Learn about alternative navigation solutions at http://facebook.github.io/react-native/docs/navigation.html</div></pre></td></tr></table></figure>
-<p>这是因为版本升级到0.43以上的话，Navigator不能直接从react-native里面获取了，<br>解决方案：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-native-deprecated-custom-components --save</div></pre></td></tr></table></figure></p>
+<p><div class="tip"><br>  这是因为版本升级到0.43以上的话，Navigator不能直接从react-native里面获取了，<br></div></p>
+<h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-native-deprecated-custom-components --save</div></pre></td></tr></table></figure>
 <p>然后在引用的地方<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &#123;Navigator&#125; from react-native-deprecated-custom-components`</div></pre></td></tr></table></figure></p>
 ]]></content>
       
