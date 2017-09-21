@@ -221,7 +221,7 @@ body {
 body {
     margin: 0;
     font-family: sourcesanspro, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     background-color: #fff;
     color: #333;
@@ -284,8 +284,7 @@ table tbody td {
 }
 
 header {
-    background-color: rgba(255,255,255,0.98);
-    box-shadow: 0 0 3px rgba(14,14,14,0.26);
+    background: #41b883;
     position: fixed;
     width: 100%;
     top: 0;
@@ -316,7 +315,8 @@ header .nav-list-item {
 
 header .nav-list-item a {
     font-size: 16px;
-    color: #34495e;
+    font-weight: bold;
+    color: #fff;
     display: block;
     font-family: "微软雅黑";
 }
@@ -401,18 +401,17 @@ header .nav-list-item .active { opacity: 0.7; }
 .post-block .post-title {
     display: block;
     margin: 0.65em 0;
-    font-size: 25px;
-    color: #34495e;
+    font-size: 18px;
 }
 
 .post .post-block .post-title {
-    font-size: 22px;
+    font-size: 20px;
     color: #41b883;
 }
 
 .post-block .post-title a { color: #333; }
 
-.post-block .post-title a:hover { border-bottom: 2px solid #42b983; }
+.post-block .post-title a:hover { color: #41b883; }
 
 .post-block .post-info {
     margin: 1.2em 0;
