@@ -15,7 +15,6 @@
 }
 
 html {
-    font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -220,11 +219,11 @@ body {
 
 body {
     margin: 0;
-    font-family: sourcesanspro, "Helvetica Neue", Arial, sans-serif;
+    font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.7;
     background-color: #fff;
-    color: #333;
+    color: #555;
 }
 
 ul.nav,ul.post-list {
@@ -284,8 +283,9 @@ table tbody td {
 }
 
 header {
-    background: #41b883;
     position: fixed;
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 0 3px rgba(14,14,14,0.26);
     width: 100%;
     top: 0;
     z-index: 10;
@@ -315,8 +315,8 @@ header .nav-list-item {
 
 header .nav-list-item a {
     font-size: 16px;
-    font-weight: bold;
-    color: #fff;
+    font-weight: normal;
+    color: #34495e;
     display: block;
     font-family: "微软雅黑";
 }
@@ -368,7 +368,17 @@ header .nav-list-item .active { opacity: 0.7; }
 
 .home.post-list .post-content > ul { list-style: initial; }
 
-.home.post-list .read-more { color: #42b983; }
+.home.post-list .read-more {
+    font-size: 14px;
+    color: #444;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.home.post-list .read-more:hover {
+    background: #F8F8F8;
+    border-bottom-color: #41b883;
+}
 
 .archive .archive-year { font-family: Georgia, serif; }
 
@@ -400,23 +410,24 @@ header .nav-list-item .active { opacity: 0.7; }
 
 .post-block .post-title {
     display: block;
-    margin: 0.65em 0;
-    font-size: 18px;
+    margin: 0.65em 0 0;
+    font-size: 22px;
+    font-weight: normal;
 }
 
 .post .post-block .post-title {
-    font-size: 20px;
-    color: #41b883;
+    font-size: 23px;
+    font-weight: normal;
 }
 
-.post-block .post-title a { color: #333; }
+.post-block .post-title a { color: #555; }
 
-.post-block .post-title a:hover { color: #41b883; }
+.post-block .post-title a:hover { color: #666; }
 
 .post-block .post-info {
-    margin: 1.2em 0;
-    font-family: Georgia, serif;
-    font-size: 16px;
+    margin: 0.5em 0 1.5em;
+    font-family: serif;
+    font-size: 13px;
     color: #7f8c8d;
 }
 
@@ -428,6 +439,8 @@ header .nav-list-item .active { opacity: 0.7; }
     border-radius: 5px;
     font-size: 12px;
     color: #fff;
+    vertical-align: 2px;
+    margin-left: 10px;
 }
 
 .post-block .post-info .visit {
@@ -967,7 +980,7 @@ footer .copyright a:hover { color: #666; }
     font-family: '微软雅黑';
 }
 
-.widget a { color: #333; }
+.widget a { color: #6E7173; }
 
 .widget a:hover { color: #41b883; } 
 
@@ -985,10 +998,12 @@ footer .copyright a:hover { color: #666; }
 .tagcloud a {
     padding-right: 4px;
     white-space: nowrap;
+    font-size: 14px!important;
 }
 
 .recent .post-list li {
     height: 28px;
+    font-size: 14px;
     line-height: 28px;
     overflow: hidden;
 }
