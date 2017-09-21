@@ -96,7 +96,7 @@
     <entry>
       <title><![CDATA[react-native中Navigator-is-deprecated的报错处理]]></title>
       <url>/2015/12/03/Navigator-is-deprecated-and-has-been-removed-from-this-package/</url>
-      <content type="html"><![CDATA[<p>报错：’Navigator is deprecated and has been removed from this package. It can now be installed ‘<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<p>报错：Navigator is deprecated and has been removed from this package. It can now be installed…<br><a id="more"></a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ExceptionsManager.js:65 Navigator is deprecated and has been removed from this </div><div class="line">package. It can now be installed and imported from </div><div class="line">`react-native-deprecated-custom-components` instead of `react-native`. </div><div class="line">Learn about alternative navigation solutions at http://facebook.github.io/react-native/docs/navigation.html</div></pre></td></tr></table></figure>
 <p><div class="tip"><br>  这是因为版本升级到0.43以上的话，Navigator不能直接从react-native里面获取了，<br></div></p>
 <h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-native-deprecated-custom-components --save</div></pre></td></tr></table></figure>
