@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.miuu.club/"/>
-  <updated>2017-09-22T15:30:15.000Z</updated>
+  <updated>2017-09-25T09:30:17.000Z</updated>
   <id>http://www.miuu.club/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>h5传值</title>
+    <link href="http://www.miuu.club/2017/09/25/h5%E4%BC%A0%E5%80%BC/"/>
+    <id>http://www.miuu.club/2017/09/25/h5传值/</id>
+    <published>2017-09-25T09:28:44.000Z</published>
+    <updated>2017-09-25T09:30:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>早期时期</p><p>cookie存储</p><p>（之前我用着还是很方便的，存一些用户不重要的信息呀），后来大神告诉我，这个很影响页面加载速度，并且安全性低</p><p>大小4kb（真的好小哦）</p><p>后来时期</p><p>随着H5的到来，它提供了新的web存储，webstorage</p><p>基本包含了localStorage和sessionStorage</p><p>localStorage</p><p>　　一种没有时间限制的缓存，我们不手动清理，就不丢失</p><p>sessionStorage</p><p>　　（”短时间“存储，大神原谅我粗糙的解释），我们用户的窗口执行了关闭操作，sessionStorage的数据会丢失</p><p>先检测我们浏览器是不是支持H5的存储<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">if (window.localStorage &amp;&amp; window.sessionStorage) &#123;</div><div class="line">      alert(&quot;你的浏览器支持localStorage和sessionStorage&quot;);</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p><p>创建一个localStorage存储</p><p>//先判断支持<br> if (window.localStorage) { localStorage.setItem(“userName”, “老王”); }<br>获取我们localStorage存储的数据</p><p>localStorage.getItem(“userName”)<br>最后我们操作删除localStorage存储</p><p>localStorage.removeItem(“userName”);<br>//关闭缓存<br>localStorage.clear();</p><p>sessionStorage操作和localStorage基本操作一样的！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;早期时期&lt;/p&gt;
+&lt;p&gt;cookie存储&lt;/p&gt;
+&lt;p&gt;（之前我用着还是很方便的，存一些用户不重要的信息呀），后来大神告诉我，这个很影响页面加载速度，并且安全性低&lt;/p&gt;
+&lt;p&gt;大小4kb（真的好小哦）&lt;/p&gt;
+&lt;p&gt;后来时期&lt;/p&gt;
+&lt;p&gt;随着H5的到来，它提供了新的we
+      
+    
+    </summary>
+    
+      <category term="h5/css3" scheme="http://www.miuu.club/categories/h5-css3/"/>
+    
+    
+      <category term="localStorage" scheme="http://www.miuu.club/tags/localStorage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webstrom</title>
+    <link href="http://www.miuu.club/2017/09/25/webstrom/"/>
+    <id>http://www.miuu.club/2017/09/25/webstrom/</id>
+    <published>2017-09-25T03:06:14.000Z</published>
+    <updated>2017-09-25T09:30:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>webstorm支持sass的同步编译,也就是即写即编译,并且可以指定编译后的css的目录.</p><p>本文使用的webstorm为8.0版本</p><p>scss安装：<a href="http://www.w3cplus.com/sassguide/install.html" target="_blank" rel="external">http://www.w3cplus.com/sassguide/install.html</a></p><p>打开webstorm：</p><p>点击左上角的File→Settings→File Watchers</p><p>在弹窗的窗口的右上角点击绿色的 ‘+’ 号,然后选择scss<br>Arguments:</p><p>可以配置编译后的文件的输出路径,我这里写的是:</p><p>–no-cache –update –sourcemap –watch $FileName$:$FileParentDir$/css/$FileNameWithoutExtension$.css</p><p>注意, $FileName$后面有个冒号,然后$FileParentDir$表示的是scss文件所在的文件夹的父级文件夹,而不是scss文件的父文件夹.</p><p>举个栗子,我的项目叫sass-learn,里面有个scss文件夹,里面存放scss文件,那么按照这样配置的结果,style.scss所在的文件夹就是scss,scss的父文件夹就是sass-learn,然后找到sass-learn下的css文件夹,编译后的style.css文件就会在这里.</p><hr><p>Output paths to refresh:</p><p>改成这样:</p><p>$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;webstorm支持sass的同步编译,也就是即写即编译,并且可以指定编译后的css的目录.&lt;/p&gt;
+&lt;p&gt;本文使用的webstorm为8.0版本&lt;/p&gt;
+&lt;p&gt;scss安装：&lt;a href=&quot;http://www.w3cplus.com/sassguide/install
+      
+    
+    </summary>
+    
+      <category term="sass" scheme="http://www.miuu.club/categories/sass/"/>
+    
+    
+      <category term="webstrom" scheme="http://www.miuu.club/tags/webstrom/"/>
+    
+  </entry>
   
   <entry>
     <title>又是一天</title>
