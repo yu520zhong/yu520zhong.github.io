@@ -3,25 +3,35 @@
   
     
     <entry>
-      <title><![CDATA[h5传值]]></title>
-      <url>/2017/09/25/h5%E4%BC%A0%E5%80%BC/</url>
-      <content type="html"><![CDATA[<p>早期时期</p>
-<p>cookie存储</p>
-<p>（之前我用着还是很方便的，存一些用户不重要的信息呀），后来大神告诉我，这个很影响页面加载速度，并且安全性低</p>
-<p>大小4kb（真的好小哦）</p>
-<p>后来时期</p>
-<p>随着H5的到来，它提供了新的web存储，webstorage</p>
-<p>基本包含了localStorage和sessionStorage</p>
-<p>localStorage</p>
-<p>　　一种没有时间限制的缓存，我们不手动清理，就不丢失</p>
-<p>sessionStorage</p>
-<p>　　（”短时间“存储，大神原谅我粗糙的解释），我们用户的窗口执行了关闭操作，sessionStorage的数据会丢失</p>
-<p>先检测我们浏览器是不是支持H5的存储<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">if (window.localStorage &amp;&amp; window.sessionStorage) &#123;</div><div class="line">      alert(&quot;你的浏览器支持localStorage和sessionStorage&quot;);</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
-<p>创建一个localStorage存储</p>
-<p>//先判断支持<br> if (window.localStorage) { localStorage.setItem(“userName”, “老王”); }<br>获取我们localStorage存储的数据</p>
-<p>localStorage.getItem(“userName”)<br>最后我们操作删除localStorage存储</p>
-<p>localStorage.removeItem(“userName”);<br>//关闭缓存<br>localStorage.clear();</p>
-<p>sessionStorage操作和localStorage基本操作一样的！</p>
+      <title><![CDATA[我喜欢的JS命名规则]]></title>
+      <url>/2017/09/26/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84JS%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/</url>
+      <content type="html"><![CDATA[<p>JS命名方法有很多种,根据喜欢不同,一般情况下,我喜欢使用这样的命名我的JS:<br>命名变量,用下划线来分割各个单词,其中前缀使用名词,并尽量在变量名字中体现所属类型，如:length、count等表示数字类型；而包含name、title表示为字符串类型,如<strong>title_text,max_count,current_abbr,table_title</strong>;<a id="more"></a><br>命名函数,采用小驼峰式命名法,首字母小写,名字前缀为动词，以便区分变量和函数。如<strong>displayAbbreviations(),addLoadEvent(),getName()</strong>;<br>这样我就可以一样看出哪些是变量,哪些是函数。<br>常量名称全部大写,使用大写字母和下划线来组合命名，下划线用以分割单词。如<strong>var MIN_COUNT = 10;</strong><br>构造函数,其采用new 运算符创建对象,使用大驼峰式命名法，首字母大写,前缀为名称。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function Student(name) &#123;</div><div class="line">    this.name = name;</div><div class="line">&#125;</div><div class="line">var student_name = new Student(&apos;tom&apos;);</div></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> JS </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JS命名规则 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于html5的webstorage——静态传值]]></title>
+      <url>/2017/09/25/%E5%85%B3%E4%BA%8Ehtml5%E7%9A%84webstorage%E2%80%94%E2%80%94%E9%9D%99%E6%80%81%E4%BC%A0%E5%80%BC/</url>
+      <content type="html"><![CDATA[<p>html5静态页面之间的传值: <strong>localStorage、sessionStorage</strong><br>随着H5的到来，它提供了新的web存储，webstorage，包含了localStorage和sessionStorage<br>localStorage：一种没有时间限制的缓存，我们不手动清理，就不丢失<br>sessionStorage：用户的窗口执行了关闭操作，sessionStorage的数据会丢失<a id="more"></a><br>先检测浏览器是不是支持H5的存储<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">if (window.localStorage &amp;&amp; window.sessionStorage) &#123;</div><div class="line">      alert(&quot;你的浏览器支持localStorage和sessionStorage&quot;);</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
+<p>创建一个localStorage存储<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//先判断支持</div><div class="line"> if (window.localStorage) &#123; localStorage.setItem(&quot;userName&quot;, &quot;张龙&quot;); &#125;</div></pre></td></tr></table></figure></p>
+<p>获取localStorage存储的数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">localStorage.getItem(&quot;userName&quot;);</div></pre></td></tr></table></figure></p>
+<p>最后操作删除localStorage存储<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">localStorage.removeItem(&quot;userName&quot;);</div></pre></td></tr></table></figure></p>
+<p>//关闭缓存<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">localStorage.clear();</div></pre></td></tr></table></figure></p>
+<p>sessionStorage操作和localStorage基本操作一样！</p>
 ]]></content>
       
         <categories>
@@ -40,22 +50,9 @@
     </entry>
     
     <entry>
-      <title><![CDATA[webstrom]]></title>
-      <url>/2017/09/25/webstrom/</url>
-      <content type="html"><![CDATA[<p>webstorm支持sass的同步编译,也就是即写即编译,并且可以指定编译后的css的目录.</p>
-<p>本文使用的webstorm为8.0版本</p>
-<p>scss安装：<a href="http://www.w3cplus.com/sassguide/install.html" target="_blank" rel="external">http://www.w3cplus.com/sassguide/install.html</a></p>
-<p>打开webstorm：</p>
-<p>点击左上角的File→Settings→File Watchers</p>
-<p>在弹窗的窗口的右上角点击绿色的 ‘+’ 号,然后选择scss<br>Arguments:</p>
-<p>可以配置编译后的文件的输出路径,我这里写的是:</p>
-<p>–no-cache –update –sourcemap –watch $FileName$:$FileParentDir$/css/$FileNameWithoutExtension$.css</p>
-<p>注意, $FileName$后面有个冒号,然后$FileParentDir$表示的是scss文件所在的文件夹的父级文件夹,而不是scss文件的父文件夹.</p>
-<p>举个栗子,我的项目叫sass-learn,里面有个scss文件夹,里面存放scss文件,那么按照这样配置的结果,style.scss所在的文件夹就是scss,scss的父文件夹就是sass-learn,然后找到sass-learn下的css文件夹,编译后的style.css文件就会在这里.</p>
-<hr>
-<p>Output paths to refresh:</p>
-<p>改成这样:</p>
-<p>$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map</p>
+      <title><![CDATA[webstorm支持sass的同步编译设置方法]]></title>
+      <url>/2017/09/25/webstorm%E6%94%AF%E6%8C%81sass%E7%9A%84%E5%90%8C%E6%AD%A5%E7%BC%96%E8%AF%91%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p>webstorm支持sass的同步编译,也就是即写即编译,并且可以指定编译后的css的目录。<br>打开webstorm：<br>点击左上角的File→Settings→File Watchers<br>在弹窗的窗口的右上角点击绿色的 ‘+’ 号,然后选择scss<br><a id="more"></a>Arguments:<br>可以配置编译后的文件的输出路径,我这里写的是:<br>–no-cache –update –sourcemap –watch $FileName$:$FileParentDir$/css/$FileNameWithoutExtension$.css<br>注意, $FileName$后面有个冒号,然后$FileParentDir$表示的是scss文件所在的文件夹的父级文件夹,而不是scss文件的父文件夹。<br>举个栗子,我的项目叫sass-learn,里面有个scss文件夹,里面存放scss文件,那么按照这样配置的结果,style.scss所在的文件夹就是scss,scss的父文件夹就是sass-learn,然后找到sass-learn下的css文件夹,编译后的style.css文件就会在这里。<br>Output paths to refresh:<br>改成这样:$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map</p>
 ]]></content>
       
         <categories>
@@ -191,8 +188,7 @@
     <entry>
       <title><![CDATA[react-native中Navigator-is-deprecated的报错处理]]></title>
       <url>/2015/12/03/Navigator-is-deprecated-and-has-been-removed-from-this-package/</url>
-      <content type="html"><![CDATA[<p>报错：Navigator is deprecated and has been removed from this package. It can now be installed…<br><a id="more"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ExceptionsManager.js:65 Navigator is deprecated and has been removed from this </div><div class="line">package. It can now be installed and imported from </div><div class="line">`react-native-deprecated-custom-components` instead of `react-native`. </div><div class="line">Learn about alternative navigation solutions at http://facebook.github.io/react-native/docs/navigation.html</div></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<p>报错：Navigator is deprecated and has been removed from this package. It can now be installed…<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ExceptionsManager.js:65 Navigator is deprecated and has been removed from this </div><div class="line">package. It can now be installed and imported from </div><div class="line">`react-native-deprecated-custom-components` instead of `react-native`. </div><div class="line">Learn about alternative navigation solutions at http://facebook.github.io/react-native/docs/navigation.html</div></pre></td></tr></table></figure></p>
 <p><div class="tip"><br>  这是因为版本升级到0.43以上的话，Navigator不能直接从react-native里面获取了，<br></div></p>
 <h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-native-deprecated-custom-components --save</div></pre></td></tr></table></figure>
 <p>然后在引用的地方<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &#123;Navigator&#125; from react-native-deprecated-custom-components`</div></pre></td></tr></table></figure></p>
