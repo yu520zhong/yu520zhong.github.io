@@ -12,7 +12,7 @@
 <p>⊙CSS3媒体查询（media queries）：识别媒体类型，特征（屏幕宽度，像素比等）。</p>
 <p>⊙流式布局（fluid layout）：可以根据浏览器的宽度和屏幕的大小自动调整效果。</p>
 <p>⊙响应式网格（Responsesive fluid grid）：依赖于媒体查询，根据不同的屏幕大小调整布局。</p>
-<p>流式图片（fluid images）：随流式布局进行相应缩放。</p>
+<p>⊙流式图片（fluid images）：随流式布局进行相应缩放。</p>
 ]]></content>
       
         
