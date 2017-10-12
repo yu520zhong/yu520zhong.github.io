@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.miuu.club/"/>
-  <updated>2017-10-12T06:55:33.000Z</updated>
+  <updated>2017-10-12T06:57:38.000Z</updated>
   <id>http://www.miuu.club/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://www.miuu.club/2017/10/12/HTML5%E7%9A%84%E7%9B%B8%E6%AF%94%E5%8E%9F%E6%9D%A5%E7%9A%84%E7%89%88%E6%9C%AC%E6%9C%89%E5%93%AA%E4%BA%9B%E6%9B%B4%E6%96%B0%EF%BC%8C%E5%B9%B6%E5%88%97%E4%B8%BEHTML5%E5%B8%B8%E7%94%A8%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE/"/>
     <id>http://www.miuu.club/2017/10/12/HTML5的相比原来的版本有哪些更新，并列举HTML5常用的语义化标签/</id>
     <published>2017-10-12T02:13:06.000Z</published>
-    <updated>2017-10-12T06:55:33.000Z</updated>
+    <updated>2017-10-12T06:57:38.000Z</updated>
     
-    <content type="html"><![CDATA[<p>HTML5有8大更新，具体如下：<br>⊙语义网（Semantics）：提供了一组丰富的语义化标签,如<header>、<section>、<article>、<footer>等。<br>⊙    离线&amp;存储（Offline &amp; Storage）：HTML5 App Cache，Local Storage，Indexed DB和File API使Web应用程序更加迅速，并提供了离线使用的能力。<br>⊙设备访问（Device Access）：增强了设备感知能力使得Web应用在电脑、pad、手机上均能正常使用。<br>⊙通信（Connectivity）：增强了通信能力，意味着增强了聊天程序的实时性和网络游戏的顺畅性。<br>⊙多媒体（Multimedia）：音频和视频能力的增强是HTML5的最大突破！<br>⊙图形和特效（3D, Graphics &amp; Effects）：Canvas、SVG和WebGL等功能使得图形渲染更高效，页面效果更加炫酷。<br>⊙性能和集成（Performance &amp; Integration）：Web Worker让浏览器可以多线程处理后台任务而不阻塞用户界面渲染。同时，性能检测工具方便评估程序性能。<br>⊙呈现（CSS3）：CSS3可以很高效的实现页面特效，并不会影响页面的语义和性能。其中,HTML5常用的语义化标签有<header>、<section>、<article>、<aside>、<nav>、<footer>等。</footer></nav></aside></article></section></header></footer></article></section></header></p>]]></content>
+    <content type="html"><![CDATA[<p>HTML5有8大更新，具体如下：<br>⊙语义网（Semantics）：提供了一组丰富的语义化标签,如header、section、article、footer等。<br>⊙    离线&amp;存储（Offline &amp; Storage）：HTML5 App Cache，Local Storage，Indexed DB和File API使Web应用程序更加迅速，并提供了离线使用的能力。<br>⊙设备访问（Device Access）：增强了设备感知能力使得Web应用在电脑、pad、手机上均能正常使用。<br>⊙通信（Connectivity）：增强了通信能力，意味着增强了聊天程序的实时性和网络游戏的顺畅性。<br>⊙多媒体（Multimedia）：音频和视频能力的增强是HTML5的最大突破！<br>⊙图形和特效（3D, Graphics &amp; Effects）：Canvas、SVG和WebGL等功能使得图形渲染更高效，页面效果更加炫酷。<br>⊙性能和集成（Performance &amp; Integration）：Web Worker让浏览器可以多线程处理后台任务而不阻塞用户界面渲染。同时，性能检测工具方便评估程序性能。<br>⊙呈现（CSS3）：CSS3可以很高效的实现页面特效，并不会影响页面的语义和性能。其中,HTML5常用的语义化标签有header、section、article、aside、hgroup、figure、figcaption、nav、footer等。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;HTML5有8大更新，具体如下：&lt;br&gt;⊙语义网（Semantics）：提供了一组丰富的语义化标签,如&lt;header&gt;、&lt;section&gt;、&lt;article&gt;、&lt;footer&gt;等。&lt;br&gt;⊙    离线&amp;amp;存储（Offline &amp;amp; Storage）：HTML5
+        &lt;p&gt;HTML5有8大更新，具体如下：&lt;br&gt;⊙语义网（Semantics）：提供了一组丰富的语义化标签,如header、section、article、footer等。&lt;br&gt;⊙    离线&amp;amp;存储（Offline &amp;amp; Storage）：HTML5 App Cac
       
     
     </summary>
